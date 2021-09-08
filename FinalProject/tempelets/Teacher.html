@@ -1,0 +1,21 @@
+{% extends 'header.html' %}
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+                            {%for item in Data %}
+
+            <div class="col-md-6 col-sm-12 col-lg-4" >
+               <div style="background-color:#AAEEFF">  FName   </div>
+                {{item.firstname}}
+                <div style="background-color:#AAEEFF">LName</div>
+                {{item.lastname}}
+                 <div style="background-color:#AAEEFF">Specialization</div>
+                {{item.Specialization}}
+            </div>
+
+                {% endfor %}
+            </div>
+                       </div>
+
+{% endblock %}
